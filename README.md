@@ -13,8 +13,3 @@ Lege eine neue Seite "Variables" an. Kann auch anders heißen, aber dann muss di
 ## 3. Einstellen
 
 Texte für das Banner können von nun an im Backend in der Seite "Variables" gesetzt werden. Dort kann das Banner samt geladener Dateien auch deaktiviert werden. Das Styling wird über die banner.scss vorgenommen.
-
-
-
-
-© nkn, 2023
