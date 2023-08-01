@@ -1,0 +1,66 @@
+title: Docs
+'@extends':
+    type: default
+    context: blueprints://pages
+
+form:
+  fields:
+    tabs:
+      type: tabs
+      active: 1
+
+      fields:
+
+        content:
+          fields:
+            banner:
+              type: section
+              title: Banner
+              underline: true
+              fields:
+                
+                header.banner.active:
+                  type: checkboxes
+                  label: THEME_BANNER_ACTIVE_LABEL
+                  options:
+                    checkbox: ''
+                  default: 
+                    checkbox: false
+                  use: keys
+                header.banner.text:
+                  type: markdown
+                  label: THEME_BANNER_TEXT_LABEL
+                header.banner.dismiss:
+                  type: text
+                  label: THEME_BANNER_DISMISS_LABEL
+                  default: Dismiss
+                  help: THEME_BANNER_DISMISS_HELP
+                header.banner.timeout:
+                  type: text
+                  label: THEME_BANNER_TIMEOUT_LABEL
+                  help: THEME_BANNER_TIMEOUT_HELP
+                header.banner.cta_status:
+                  type: toggle
+                  label: THEME_BANNER_CTA_STATUS_LABEL
+                  options:
+                    1: PLUGIN_ADMIN.YES
+                    0: PLUGIN_ADMIN.NO
+                  default: 1
+                  validate:
+                    type: bool
+                  help: THEME_BANNER_CTA_STATUS_HELP
+                header.banner.cta_text:
+                  type: text
+                  label: THEME_BANNER_CTA_TEXT_LABEL
+                  help: THEME_BANNER_CTA_TEXT_HELP
+                header.banner.cta_link:
+                  type: text
+                  label: THEME_BANNER_CTA_LINK_LABEL
+                header.banner.cta_target:
+                  type: toggle
+                  label: THEME_BANNER_CTA_TARGET_LABEL
+                  options:
+                    _self: PLUGIN_ADMIN.TARGET_SELF
+                    _blank: PLUGIN_ADMIN.TARGET_BLANK
+                  default: _self
+                  help: THEME_BANNER_CTA_TARGET_HELP

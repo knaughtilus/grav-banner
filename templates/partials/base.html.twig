@@ -1,0 +1,27 @@
+{% set banner = page.find('/variables').header.banner %}
+
+<!DOCTYPE html>
+<html lang="{{ grav.language.getActive ?: grav.config.site.default_lang }}">
+<head>
+{% block head %}
+
+    {% block stylesheets %}
+        {% if banner.active.checkbox == true %}
+            {% do assets.addCss('theme://css-compiled/banner.min.css') %}
+        {% endif %}
+    {% endblock %}
+
+    {% block javascripts %}
+        {% if banner.active.checkbox == true %}
+            {% script 'theme://js/banner.js' %}
+        {% endif %}
+    {% endblock %}
+
+{% endblock head %}
+
+</head>
+
+
+{% if banner.active.checkbox == true %}
+    {% include "partials/banner.html.twig" %}
+{% endif %}

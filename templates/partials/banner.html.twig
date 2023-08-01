@@ -1,0 +1,18 @@
+{% set bannerDismissTimeout = "banner_dismiss(" ~ (banner.timeout ?? 86400) ~ ")" %}
+
+{% set bannerDismissClass = (banner.cta_status == 1 and banner.cta_text and banner.cta_link) ? "btn-blank" : "btn-primary" %}
+
+<div class="banner-container" id="custom-banner">
+    <div class="banner-body">
+        <div class="banner-content">
+            {{ banner.text|markdown }}
+        </div>
+        <div class="banner-actions">
+            <a class="{{ bannerDismissClass }}" href="javascript:void(0)" onclick="{{ bannerDismissTimeout|lowercase|ltrim(' sekund')|rtrim(' sekund') }};">{{ banner.dismiss }}</a>
+            
+            {% if banner.cta_status == 1 and banner.cta_text and banner.cta_link %}
+            <a class="btn-primary" href="{{ banner.cta_link }}" target="{{ banner.cta_target }}">{{ banner.cta_text }}</a>
+            {% endif %}
+        </div>
+    </div>
+</div>

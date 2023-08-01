@@ -1,0 +1,44 @@
+en:
+  PLUGIN_ADMIN:
+    TARGET_SELF: 'Current Tab'
+    TARGET_BLANK: 'New Tab'
+
+  PLUGIN_ERROR:
+    ERROR_BUTTON: 'Back to Start'
+
+  THEME_BANNER_ACTIVE_LABEL: 'Banner is active'
+  THEME_BANNER_TEXT_LABEL: 'Banner text'
+  THEME_BANNER_DISMISS_LABEL: 'Dismiss button'
+  THEME_BANNER_DISMISS_HELP: 'Dismiss Text for button. Default is "Dismiss".'
+  THEME_BANNER_TIMEOUT_LABEL: 'Timeout (s)'
+  THEME_BANNER_TIMEOUT_HELP: 'Duration in seconds, until banner is shown again after dismissal. Defaults to 86400 (1 day).'
+  THEME_BANNER_CTA_STATUS_LABEL: 'CTA button'
+  THEME_BANNER_CTA_STATUS_HELP: '(De)Activates the CTA button. When deactivated dismiss button becomes primary button.'
+  THEME_BANNER_CTA_TEXT_LABEL: 'Text CTA button'
+  THEME_BANNER_CTA_TEXT_HELP: 'Text of the CTA button. If not given the cta button will be deactivated and dismiss button will change accordingly.'
+  THEME_BANNER_CTA_LINK_LABEL: 'CTA link'
+  THEME_BANNER_CTA_TARGET_LABEL: 'Target type'
+  THEME_BANNER_CTA_TARGET_HELP: 'Choose whether the link will be opened in the same or a new tab.'
+
+
+de:
+  PLUGIN_ADMIN:
+    TARGET_SELF: 'Selber Tab'
+    TARGET_BLANK: 'Neuer Tab'
+
+  PLUGIN_ERROR:
+    ERROR_BUTTON: 'Zurück zum Start'
+
+  THEME_BANNER_ACTIVE_LABEL: 'Banner ist aktiv'
+  THEME_BANNER_TEXT_LABEL: 'Banner-Text'
+  THEME_BANNER_DISMISS_LABEL: 'Schließen-Button'
+  THEME_BANNER_DISMISS_HELP: 'Button-Text des Schließen-Buttons. Standard ist "Dismiss"'
+  THEME_BANNER_TIMEOUT_LABEL: 'Timeout (s)'
+  THEME_BANNER_TIMEOUT_HELP: 'Dauer in Sekunden, nach welcher das Banner erneut angezeigt wird. Standard (wenn leer) ist 86400 (1 Tag).'
+  THEME_BANNER_CTA_STATUS_LABEL: 'CTA-Button'
+  THEME_BANNER_CTA_STATUS_HELP: 'Aktiviert/Deaktiviert den CTA-Button. Wenn Aktiviert wird der Schließen-Button zum Primären Button.'
+  THEME_BANNER_CTA_TEXT_LABEL: 'Text CTA-Button'
+  THEME_BANNER_CTA_TEXT_HELP: 'Text des CTA-Buttons. Ist kein Text angegeben wird der Button nicht gerendert und der Schließen-Button erhält das Aussehen des CTA-Buttons'
+  THEME_BANNER_CTA_LINK_LABEL: 'CTA Link'
+  THEME_BANNER_CTA_TARGET_LABEL: 'Ziel des Links'
+  THEME_BANNER_CTA_TARGET_HELP: 'Auswahl ob der Link des CTA-Buttons im aktuellen oder einem neuen Tab geöffnet werden soll.'
